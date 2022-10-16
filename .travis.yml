@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version
   # build
-  - docker compose -f docker-compose-build.yaml build --parallel
+  - docker-compose -f docker-compose-build.yaml build --parallel
   # tag
   - docker tag udagram-reverseproxy leok13/udagram-reverseproxy:v1
   - docker tag udagram-api-user leok13/udagram-api-user:v1
