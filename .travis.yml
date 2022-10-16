@@ -1,0 +1,6 @@
+script:
+  # build
+  - docker-compose -f ./dockerhub/docker-compose-build.yaml build --parallel
+  # push
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker-compose -f ./dockerhub/docker-compose.yaml push
