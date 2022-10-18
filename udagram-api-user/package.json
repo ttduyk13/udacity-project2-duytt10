@@ -7,7 +7,7 @@
     "start": "node .",
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
-    "prod": "tsc && node ./www/server.js",
+    "prod": "export NODE_OPTIONS=--max_old_space_size=4096 && tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@types/bluebird": "^3.5.37",
     "@types/cors": "^2.8.6",
-    "@types/express": "^4.16.1",
+    "@types/express": "^4.17.14",
     "@types/node": "^11.15.54",
     "@types/sequelize": "^4.28.14",
     "@types/validator": "^10.9.0",

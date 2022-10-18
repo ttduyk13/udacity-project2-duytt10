@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+  labels:
+    name: env-config
+data:
+  POSTGRES_HOST: udagram-duytt10-dev.co3d6w5zg2ir.us-east-2.rds.amazonaws.com
+  POSTGRES_DB: udagramduytt10dev
+  AWS_BUCKET: udagram-duytt10-dev
+  AWS_REGION: us-east-2
+  AWS_PROFILE: default
+  JWT_SECRET: udagramduydev
+  URL: http://ac511f0a7fe5040ea8bc8d37d2933baa-584032534.us-east-2.elb.amazonaws.com
