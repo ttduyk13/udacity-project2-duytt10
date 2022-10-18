@@ -11,4 +11,4 @@ data:
   AWS_REGION: us-east-2
   AWS_PROFILE: default
   JWT_SECRET: udagramduydev
-  URL: http://localhost:8100
+  URL: http://ac511f0a7fe5040ea8bc8d37d2933baa-584032534.us-east-2.elb.amazonaws.com

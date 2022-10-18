@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-        - image: leok13/udagram-api-feed:v1
+        - image: leok13/udagram-api-feed:v4
           name: backend-feed
           imagePullPolicy: Always
           resources:
@@ -30,7 +30,7 @@ spec:
           # setup aws-secret
           volumeMounts:
             - name: aws-secret
-              mountPath: "~/.aws"
+              mountPath: "/root/.aws"
               readOnly: true
           # setup env
           env:
