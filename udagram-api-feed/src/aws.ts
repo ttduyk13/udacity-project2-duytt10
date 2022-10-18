@@ -29,7 +29,6 @@ export function getGetSignedUrl(key: string): string {
   const signedUrl = s3.getSignedUrl("getObject", params);
 
   console.log(signedUrl);
-  console.log(credentials);
 
   return signedUrl;
 }
