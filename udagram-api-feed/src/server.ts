@@ -34,7 +34,7 @@ import { V0_FEED_MODELS } from "./controllers/v0/model.index";
       ],
       methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
       preflightContinue: true,
-      origin: config.url,
+      origin: true,
     })
   );
 
