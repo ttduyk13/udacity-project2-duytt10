@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-        - image: leok13/udagram-api-feed:v4
+        - image: leok13/udagram-api-feed:v6
           name: backend-feed
           imagePullPolicy: Always
           resources:
@@ -87,8 +87,3 @@ spec:
         - name: aws-secret
           secret:
             secretName: aws-secret
-            items:
-              - key: AWS_ACCESS_KEY_ID
-                path: credentials
-              - key: AWS_SECRET_ACCESS_KEY
-                path: credentials
